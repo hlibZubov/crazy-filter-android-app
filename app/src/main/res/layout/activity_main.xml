@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/welcomeScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bgi">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="50dp"
+            android:background="@color/teal_700"
+            android:bufferType="normal"
+            android:gravity="center"
+            android:text="Photo Editor"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/selectImageButton"
+            android:layout_width="140dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="20dp"
+            android:text="Select Image"
+            app:backgroundTint="@color/teal_700" />
+
+        <Button
+            android:id="@+id/takePhotoButton"
+            android:layout_width="140dp"
+            android:layout_height="75dp"
+            android:text="Take Photo"
+            app:backgroundTint="@color/teal_700" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/editScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/backgroundcolorsecondactivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="back"
+                app:backgroundTint="@color/teal_700"/>
+
+            <Button
+                android:id="@+id/crazyFilter"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Crazy Filter"
+                app:backgroundTint="@color/teal_700"/>
+
+            <Button
+                android:id="@+id/saveImg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Save"
+                app:backgroundTint="@color/teal_700"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
